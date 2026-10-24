@@ -222,13 +222,16 @@ def action_controls(country: Country, sim: Simulation, result: RunResult | None)
         room = max(held - already, 0.0)
         st.caption(f"Max: {room:,.1f} t (strategic stock {held:,.1f} t, {already:,.1f} t queued)")
         key = f"solmu_rr_t_{region}_{commodity}"
-        if st.session_state.get(key, 0.0) > room:
+        # The value lives in session state only: a widget given both a `value` and a session
+        # state entry makes Streamlit log a warning on every rerun.
+        if key not in st.session_state:
+            st.session_state[key] = min(10.0, room)
+        elif st.session_state[key] > room:
             st.session_state[key] = room
         tonnes = st.number_input(
             "Tonnes",
             min_value=0.0,
             max_value=max(room, 0.0),
-            value=min(10.0, room),
             step=10.0,
             key=key,
             disabled=room <= 0,
