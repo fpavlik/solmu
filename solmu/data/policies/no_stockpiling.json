@@ -1,0 +1,27 @@
+{
+  "id": "no_stockpiling",
+  "name": "No stockpiling",
+  "description": "Counterfactual: no strategic reserves; only the default retail buffer (default_stock_days) is held.",
+  "min_stock_days": {
+    "food": 0,
+    "fuel": 0,
+    "medicine": 0
+  },
+  "stock_holder": {
+    "food": "state",
+    "fuel": "companies",
+    "medicine": "companies"
+  },
+  "release": {
+    "trigger": "shortage",
+    "delay_days": 2,
+    "max_release_fraction_per_day": 0.1
+  },
+  "emergency_budget": 50000000,
+  "holding_cost_per_tonne_day": {
+    "food": 0.5,
+    "fuel": 0.3,
+    "medicine": 2.0
+  },
+  "capacity_rental_cost_per_tonne_day": 40
+}

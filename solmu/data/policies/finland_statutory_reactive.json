@@ -1,0 +1,53 @@
+{
+  "id": "finland_statutory_reactive",
+  "name": "Finland — statutory stocks, reactive release",
+  "description": "Same strategic stocks as finland_statutory, but released only after a region records unmet demand (trigger 'shortage'). Isolates the value of the stocks themselves from the value of the early release decision in finland_statutory.",
+  "min_stock_days": {
+    "food": 20,
+    "fuel": 150,
+    "medicine": 90
+  },
+  "stock_holder": {
+    "food": "state",
+    "fuel": "companies",
+    "medicine": "companies"
+  },
+  "release": {
+    "trigger": "shortage",
+    "delay_days": 2,
+    "max_release_fraction_per_day": 0.1
+  },
+  "emergency_budget": 50000000,
+  "holding_cost_per_tonne_day": {
+    "food": 0.5,
+    "fuel": 0.3,
+    "medicine": 2.0
+  },
+  "capacity_rental_cost_per_tonne_day": 40,
+  "strategic_stock_at": {
+    "medicine": [
+      {
+        "kind": "hub",
+        "share": 0.7
+      },
+      {
+        "kind": "region",
+        "share": 0.3
+      }
+    ],
+    "fuel": [
+      {
+        "kind": "node",
+        "node_id": "src-porvoo-refinery",
+        "share": 0.4,
+        "release": "automatic"
+      },
+      {
+        "kind": "node",
+        "node_id": "src-porvoo-refinery",
+        "share": 0.6,
+        "requires_processing": 0.4
+      }
+    ]
+  }
+}

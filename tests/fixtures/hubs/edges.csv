@@ -1,0 +1,6 @@
+id,from_node,to_node,mode,capacity_per_day,transit_days,cost_per_tonne,bidirectional
+p1-h1,p1,h1,road,1000,1,1.0,true
+p2-h2,p2,h2,road,1000,1,1.0,true
+h1-h2,h1,h2,road,1000,2,1.0,true
+h1-r1,h1,r1,road,500,1,1.0,true
+h2-r2,h2,r2,road,500,1,1.0,true

@@ -1,0 +1,208 @@
+{
+  "id": "port_strike_2010",
+  "name": "Stevedore strike at public ports, 4-19 March 2010",
+  "description": "Historical validation case (spec 13.10). Day 4 = 4 March 2010, strike days 4-19 (16 days). Container and bulk handling stopped at all public ports (fuel 0.0, Naantali 0.5); trucked ro-ro cargo kept moving at the ferry ports Helsinki, Turku, Naantali, Hanko (food and medicine 0.5) and stopped elsewhere; the Porvoo refinery and its private port are unaffected. Stocks were built up on days 0-3 (x1.5 targets for food and medicine at regions and hubs) and mild hoarding followed on days 4-6. Factors and sources: SOURCES.md; comparison with observations: docs/validation/2010_port_strike.md.",
+  "horizon_days": 30,
+  "events": [
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-helsinki",
+      "commodity_id": "fuel",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hamina-kotka",
+      "commodity_id": "fuel",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-turku",
+      "commodity_id": "fuel",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hanko",
+      "commodity_id": "fuel",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-rauma",
+      "commodity_id": "fuel",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-oulu",
+      "commodity_id": "fuel",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-kemi",
+      "commodity_id": "fuel",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-naantali",
+      "commodity_id": "fuel",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-helsinki",
+      "commodity_id": "medicine",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-helsinki",
+      "commodity_id": "food",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-turku",
+      "commodity_id": "medicine",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-turku",
+      "commodity_id": "food",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-naantali",
+      "commodity_id": "food",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hanko",
+      "commodity_id": "medicine",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hanko",
+      "commodity_id": "food",
+      "factor": 0.5,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hamina-kotka",
+      "commodity_id": "medicine",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hamina-kotka",
+      "commodity_id": "food",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-rauma",
+      "commodity_id": "food",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-oulu",
+      "commodity_id": "medicine",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-oulu",
+      "commodity_id": "food",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-kemi",
+      "commodity_id": "food",
+      "factor": 0.0,
+      "until_day": 19
+    },
+    {
+      "day": 0,
+      "type": "stock_target",
+      "node_id": "*",
+      "commodity_id": "food",
+      "factor": 1.5,
+      "until_day": 3
+    },
+    {
+      "day": 0,
+      "type": "stock_target",
+      "node_id": "*",
+      "commodity_id": "medicine",
+      "factor": 1.5,
+      "until_day": 3
+    },
+    {
+      "day": 4,
+      "type": "demand",
+      "node_id": "*",
+      "commodity_id": "fuel",
+      "factor": 1.15,
+      "until_day": 6
+    },
+    {
+      "day": 4,
+      "type": "demand",
+      "node_id": "*",
+      "commodity_id": "food",
+      "factor": 1.1,
+      "until_day": 6
+    }
+  ]
+}

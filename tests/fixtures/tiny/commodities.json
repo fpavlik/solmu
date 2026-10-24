@@ -1,0 +1,7 @@
+{
+  "commodities": [
+    {"id": "pills", "name": "Pills", "unit": "t", "priority": 1, "per_capita_kg_per_day": 0.001},
+    {"id": "grain", "name": "Grain", "unit": "t", "priority": 2, "per_capita_kg_per_day": 10.0}
+  ],
+  "default_stock_days": 2
+}

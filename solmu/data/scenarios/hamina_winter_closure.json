@@ -1,0 +1,45 @@
+{
+  "id": "hamina_winter_closure",
+  "name": "Winter closure of HaminaKotka",
+  "description": "HaminaKotka closed for 14 days in winter, Helsinki at 60% capacity, Lahti-Kouvola rail at half capacity, a temporary food demand surge in South Karelia and a nationwide food stockpiling spike (x1.3, days 3-8). Single-port closure: with warehouse stocks and import redirection to other ports, little or no shortage of essentials is the expected outcome.",
+  "horizon_days": 45,
+  "events": [
+    {
+      "day": 3,
+      "type": "node_capacity",
+      "node_id": "port-hamina-kotka",
+      "factor": 0.0,
+      "until_day": 17
+    },
+    {
+      "day": 3,
+      "type": "node_capacity",
+      "node_id": "port-helsinki",
+      "factor": 0.6,
+      "until_day": 20
+    },
+    {
+      "day": 3,
+      "type": "edge_capacity",
+      "edge_id": "rail-FI-16-FI-09",
+      "factor": 0.5,
+      "until_day": 10
+    },
+    {
+      "day": 5,
+      "type": "demand",
+      "node_id": "FI-02",
+      "commodity_id": "food",
+      "factor": 1.5,
+      "until_day": 9
+    },
+    {
+      "day": 3,
+      "type": "demand",
+      "node_id": "*",
+      "commodity_id": "food",
+      "factor": 1.3,
+      "until_day": 8
+    }
+  ]
+}

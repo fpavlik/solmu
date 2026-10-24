@@ -1,0 +1,4 @@
+node_id,commodity_id,tonnes_per_day
+reg-a,grain,10
+reg-b,grain,5
+reg-b,pills,0.5

@@ -1,0 +1,37 @@
+{
+  "commodities": [
+    {
+      "id": "medicine",
+      "name": "Medicines",
+      "unit": "t",
+      "priority": 1,
+      "per_capita_kg_per_day": 0.01,
+      "via_hubs": true,
+      "hub_stock_days": 14,
+      "shortage_cost_per_tonne": 200000
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "unit": "t",
+      "priority": 2,
+      "per_capita_kg_per_day": 2.0,
+      "via_hubs": true,
+      "hub_stock_days": 7,
+      "shortage_cost_per_tonne": 5000
+    },
+    {
+      "id": "fuel",
+      "name": "Fuel",
+      "unit": "t",
+      "priority": 3,
+      "per_capita_kg_per_day": 4.0,
+      "via_hubs": false,
+      "shortage_cost_per_tonne": 5000
+    }
+  ],
+  "default_stock_days": 2,
+  "hub_stock_days": 7,
+  "import_redirect_delay_days": 2,
+  "import_backlog_loss_fraction_per_day": 0.05
+}

@@ -1,0 +1,7 @@
+id,name,kind,lat,lon,population,country,tags
+p1,Port 1,port,0.0,0.0,,XX,
+p2,Port 2,port,0.0,5.0,,XX,
+h1,Hub 1,hub,0.5,1.0,,XX,holds=medicine|food
+h2,Hub 2,hub,0.5,4.0,,XX,holds=medicine
+r1,Region 1,region,1.0,1.0,1000,XX,
+r2,Region 2,region,1.0,4.0,2000,XX,

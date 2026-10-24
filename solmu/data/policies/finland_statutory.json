@@ -1,0 +1,55 @@
+{
+  "id": "finland_statutory",
+  "name": "Finland — statutory stockpiling (approximate)",
+  "description": "Approximate Finnish/EU security-of-supply stock obligations (fuel, medicines, grain/food) expressed as days of national consumption held as strategic stock. Values are order-of-magnitude estimates, see SOURCES.md.",
+  "min_stock_days": {
+    "food": 20,
+    "fuel": 150,
+    "medicine": 90
+  },
+  "stock_holder": {
+    "food": "state",
+    "fuel": "companies",
+    "medicine": "companies"
+  },
+  "release": {
+    "trigger": "on_disruption",
+    "disruption_threshold": 0.3,
+    "disruption_persistence_days": 1,
+    "delay_days": 2,
+    "max_release_fraction_per_day": 0.1
+  },
+  "emergency_budget": 50000000,
+  "holding_cost_per_tonne_day": {
+    "food": 0.5,
+    "fuel": 0.3,
+    "medicine": 2.0
+  },
+  "capacity_rental_cost_per_tonne_day": 40,
+  "strategic_stock_at": {
+    "medicine": [
+      {
+        "kind": "hub",
+        "share": 0.7
+      },
+      {
+        "kind": "region",
+        "share": 0.3
+      }
+    ],
+    "fuel": [
+      {
+        "kind": "node",
+        "node_id": "src-porvoo-refinery",
+        "share": 0.4,
+        "release": "automatic"
+      },
+      {
+        "kind": "node",
+        "node_id": "src-porvoo-refinery",
+        "share": 0.6,
+        "requires_processing": 0.4
+      }
+    ]
+  }
+}

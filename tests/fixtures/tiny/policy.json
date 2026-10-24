@@ -1,0 +1,10 @@
+{
+  "id": "tiny_policy",
+  "name": "Tiny policy",
+  "description": "Synthetic policy for tests.",
+  "min_stock_days": {"grain": 10, "pills": 20},
+  "stock_holder": {"grain": "state", "pills": "companies"},
+  "release": {"trigger": "shortage", "delay_days": 2, "max_release_fraction_per_day": 0.1},
+  "emergency_budget": 1000,
+  "holding_cost_per_tonne_day": {"grain": 0.5, "pills": 2.0}
+}

@@ -1,0 +1,7 @@
+{
+  "id": "baseline",
+  "name": "Baseline (no disruption)",
+  "description": "No events; used for sanity checks (expected: zero unmet demand).",
+  "horizon_days": 30,
+  "events": []
+}

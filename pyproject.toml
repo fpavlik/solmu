@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solmu"
+version = "0.0.1"
+description = "Supply-chain resilience simulator: headless core + Streamlit UI (prototype v0)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Filipp Pavlik", email = "fpavlik94@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.5",
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "networkx>=3.2",
+  "pyarrow>=14.0",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.30", "plotly>=5.18"]
+dev = ["pytest>=7.4", "pytest-cov>=5", "ruff>=0.4"]
+
+[tool.setuptools.packages.find]
+include = ["solmu*"]
+
+[tool.setuptools.package-data]
+solmu = ["data/**/*.csv", "data/**/*.json", "data/**/*.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv", "_archive"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["solmu/core"]

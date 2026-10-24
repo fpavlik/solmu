@@ -1,0 +1,5 @@
+id,name,kind,lat,lon,population,country,tags
+src-a,Source A,source,1.0,1.0,,XX,
+hub-a,Hub A,hub,1.5,1.5,,XX,"zone=north;role=transfer"
+reg-a,Region A,region,2.0,2.0,1000000,XX,zone=north
+reg-b,Region B,region,2.0,3.0,500000,XX,"zone=south;kind=test"

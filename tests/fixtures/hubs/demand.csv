@@ -1,0 +1,4 @@
+node_id,commodity_id,tonnes_per_day
+r1,medicine,10
+r2,medicine,20
+r1,food,5

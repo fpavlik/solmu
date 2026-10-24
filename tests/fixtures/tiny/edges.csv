@@ -1,0 +1,4 @@
+id,from_node,to_node,mode,capacity_per_day,transit_days,cost_per_tonne,bidirectional
+road-src-hub,src-a,hub-a,road,100,1,1.0,false
+rail-hub-a,hub-a,reg-a,rail,80,2,0.5,true
+road-hub-b,hub-a,reg-b,road,60,1,1.0,true

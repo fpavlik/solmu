@@ -1,0 +1,59 @@
+{
+  "id": "gulf_of_finland_ice",
+  "name": "Gulf of Finland ice and storm",
+  "description": "Prolonged severe ice winter: HaminaKotka and Helsinki closed days 4-27, Hanko closed days 4-25, Turku at 10% (days 4-23), Helsinki-Lahti rail at 60% (days 4-9), with nationwide stockpiling spikes for food (x1.4, days 4-10) and medicine (x1.2, days 5-9). Stress scenario for comparing policies; a 10-day version with partial reductions produced no shortage under either policy (see SOURCES.md).",
+  "horizon_days": 60,
+  "events": [
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hamina-kotka",
+      "factor": 0.0,
+      "until_day": 27
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-helsinki",
+      "factor": 0.0,
+      "until_day": 27
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-hanko",
+      "factor": 0.0,
+      "until_day": 25
+    },
+    {
+      "day": 4,
+      "type": "node_capacity",
+      "node_id": "port-turku",
+      "factor": 0.1,
+      "until_day": 23
+    },
+    {
+      "day": 4,
+      "type": "demand",
+      "node_id": "*",
+      "commodity_id": "food",
+      "factor": 1.4,
+      "until_day": 10
+    },
+    {
+      "day": 5,
+      "type": "demand",
+      "node_id": "*",
+      "commodity_id": "medicine",
+      "factor": 1.2,
+      "until_day": 9
+    },
+    {
+      "day": 4,
+      "type": "edge_capacity",
+      "edge_id": "rail-FI-18-FI-16",
+      "factor": 0.6,
+      "until_day": 9
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "porvoo_refinery_outage",
+  "name": "Porvoo refinery outage, six weeks",
+  "description": "The country's only refinery (Porvoo, Kilpilahti) stops for 42 days after a fire-scale incident; ports keep importing finished fuel at their normal rates and a short burst of hoarding follows the news (fuel x1.15, days 5-8). Unlike the port scenarios this removes a domestic source, not an entry point. Planned maintenance stops of two weeks are absorbed by product stocks and are not a crisis; see SOURCES.md.",
+  "horizon_days": 90,
+  "events": [
+    {
+      "day": 5,
+      "type": "node_capacity",
+      "node_id": "src-porvoo-refinery",
+      "factor": 0.0,
+      "until_day": 46
+    },
+    {
+      "day": 5,
+      "type": "demand",
+      "node_id": "*",
+      "commodity_id": "fuel",
+      "factor": 1.15,
+      "until_day": 8
+    }
+  ]
+}

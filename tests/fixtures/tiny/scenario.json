@@ -1,0 +1,11 @@
+{
+  "id": "tiny_scenario",
+  "name": "Tiny scenario",
+  "description": "Synthetic scenario for tests.",
+  "horizon_days": 10,
+  "events": [
+    {"day": 1, "type": "node_capacity", "node_id": "src-a", "factor": 0.0, "until_day": 4},
+    {"day": 2, "type": "edge_capacity", "edge_id": "rail-hub-a", "factor": 0.5, "until_day": 5},
+    {"day": 3, "type": "demand", "node_id": "reg-a", "commodity_id": "grain", "factor": 1.5, "until_day": 6}
+  ]
+}

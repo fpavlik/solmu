@@ -1,0 +1,36 @@
+id,name,kind,lat,lon,population,country,tags
+FI-01,Åland,region,60.2,20.0,30500,FI,sea=baltic_sea
+FI-02,Etelä-Karjala,region,61.05,28.2,126000,FI,
+FI-03,Etelä-Pohjanmaa,region,62.75,23.0,186000,FI,
+FI-04,Etelä-Savo,region,61.7,27.3,146000,FI,
+FI-05,Kainuu,region,64.4,28.6,69000,FI,
+FI-06,Kanta-Häme,region,60.95,24.5,168000,FI,
+FI-07,Keski-Pohjanmaa,region,63.8,24.0,68000,FI,sea=bothnian_bay
+FI-08,Keski-Suomi,region,62.5,25.7,270000,FI,
+FI-09,Kymenlaakso,region,60.7,26.8,163000,FI,sea=gulf_of_finland
+FI-10,Lappi,region,67.5,26.5,117000,FI,sea=bothnian_bay
+FI-11,Pirkanmaa,region,61.7,23.8,538000,FI,
+FI-12,Pohjanmaa,region,63.0,22.1,175000,FI,sea=bothnian_sea
+FI-13,Pohjois-Karjala,region,63.0,30.0,160000,FI,
+FI-14,Pohjois-Pohjanmaa,region,64.9,26.5,417000,FI,sea=bothnian_bay
+FI-15,Pohjois-Savo,region,63.2,27.5,245000,FI,
+FI-16,Päijät-Häme,region,61.2,25.7,200000,FI,
+FI-17,Satakunta,region,61.5,22.0,214000,FI,sea=bothnian_sea
+FI-18,Uusimaa,region,60.25,24.95,1730000,FI,sea=gulf_of_finland
+FI-19,Varsinais-Suomi,region,60.9,22.4,485000,FI,sea=archipelago_sea
+port-helsinki,Helsinki,port,60.21,25.15,,FI,sea=gulf_of_finland;host=FI-18
+port-hamina-kotka,HaminaKotka,port,60.47,26.95,,FI,sea=gulf_of_finland;host=FI-09
+port-turku,Turku,port,60.43,22.22,,FI,sea=archipelago_sea;host=FI-19
+port-naantali,Naantali,port,60.46,21.99,,FI,sea=archipelago_sea;host=FI-19
+port-rauma,Rauma,port,61.13,21.46,,FI,sea=bothnian_sea;host=FI-17
+port-hanko,Hanko,port,59.82,22.97,,FI,sea=gulf_of_finland;host=FI-18
+port-oulu,Oulu,port,65.01,25.43,,FI,sea=bothnian_bay;host=FI-14
+port-kemi,Kemi,port,65.67,24.52,,FI,sea=bothnian_bay;host=FI-10
+src-porvoo-refinery,Porvoo refinery,source,60.31,25.55,,FI,host=FI-18
+src-agri-south-ostrobothnia,Agriculture South Ostrobothnia,source,62.79,22.83,,FI,host=FI-03
+src-agri-varsinais-suomi,Agriculture Southwest Finland,source,60.85,22.3,,FI,host=FI-19
+hub-pharma-vantaa,Pharma wholesale hub Vantaa,hub,60.29,25.04,,FI,host=FI-18;holds=medicine
+hub-pharma-tampere,Pharma wholesale hub Tampere,hub,61.45,23.85,,FI,host=FI-11;holds=medicine
+hub-food-vantaa,Grocery central warehouse Vantaa,hub,60.31,25.1,,FI,host=FI-18;holds=food
+hub-food-tampere,Grocery central warehouse Tampere,hub,61.4,23.7,,FI,host=FI-11;holds=food
+hub-food-oulu,Grocery central warehouse Oulu,hub,65.0,25.5,,FI,host=FI-14;holds=food

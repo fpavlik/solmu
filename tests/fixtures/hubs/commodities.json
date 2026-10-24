@@ -1,0 +1,9 @@
+{
+  "commodities": [
+    {"id": "medicine", "name": "Medicine", "unit": "t", "priority": 1, "via_hubs": true, "hub_stock_days": 5},
+    {"id": "food", "name": "Food", "unit": "t", "priority": 2}
+  ],
+  "default_stock_days": 2,
+  "hub_stock_days": 7,
+  "import_redirect_delay_days": 2
+}
